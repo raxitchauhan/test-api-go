@@ -17,12 +17,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/sns/snsiface"
 )
 
-// func WriteRespose(w http.ResponseWriter, res []byte) {
-// 	w.Header().Set("Content-Type", "application/json")
-// 	w.WriteHeader(http.StatusOK)
-// 	w.Write(res)
-// }
-
 func WriteRespose(w http.ResponseWriter, v any, statusCode int) {
 	res, err := json.Marshal(v)
 

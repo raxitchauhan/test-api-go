@@ -1,5 +1,7 @@
 # test-api
 
+docker run --rm -it -d -p 4566:4566 -p 4510-4559:4510-4559 localstack/localstack
+
 GET | http://localhost:8082/Get
 GET | http://localhost:8082/Get/{uuid}
 
